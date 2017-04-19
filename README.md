@@ -25,7 +25,7 @@ The only differences between regular modifiers and global modifiers is the prefi
 # Main BEM Differences 
 Traditional BEM | BEMM
 --------------- | ----
-Block, Element and Modifiers live at the root level and should be reusable anywhere, by used long class names and chaining them for specificity. I.e "block block__element block__element--modifier" | Only block elements and global modifiers live at root level and are the only class names needed to be unique. This allows for shorter class names and relies on nesting for specificity. I.e "b-block > e-element m-modifier"
+Block, Element and Modifiers live at the root level and should be reusable anywhere, by used long class names and chaining them for specificity. I.e ".block block__element .block__element--modifier" | Only block elements and global modifiers live at root level and are the only class names needed to be unique. This allows for shorter class names and relies on nesting for specificity. I.e ".b-block > .e-element .m-modifier"
 
 
 # Code Example 
@@ -50,7 +50,7 @@ Block, Element and Modifiers live at the root level and should be reusable anywh
 ```
 
 ## Naming Convention 
-All custom styling class names should have the required prefix "b-, e-, m-, g-", and long class names are separated by dashes.
+All custom styling class names should have the required prefix ".b-, .e-, .m-, .g-", and long class names are separated by dashes.
 ".b-promo-header" - ***Names can be abbreviated to shorten the name as long as it's legible or clear what it means.***
 
 ## Further Reading 

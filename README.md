@@ -2,22 +2,22 @@
 A modified take on the popular BEM (Block Element Modifier) CSS methodology.
 
 ## Block 
-**Prefix: " .b-* "**
+**Prefix: " .b-* "*
 
 Components are broken down into blocks to group code and visual elements together. These elements are given a unique name and prefixed by "b-" to represent a block element. This makes reading the HTML much more legible without knowing much about the CSS itself. An example of a block element is usually the component as a whole, i.e. dropdowns, buttons, tabs, media objects and etc. Block elements can be nested inside other block elements.
 
 ## Element 
-**Prefix: " .e-* "**
+**Prefix: " .e-* "*
 
 Elements are contained within component blocks, usually as the first child descendant but not restricted to and prefixed by "e-". These elements are what makes up a block component, i.e for a dropdown this would be the list items inside the drop down. For Domofond, the styling of elements are dependent on the immediate parent block element, in other words they are nested in CSS. This allows reusing the names elements without affecting the CSS globally or having to use unique and lengthy class names. Elements should never live on a root level without being wrapped by a block element.
 
 ## Modifiers 
-**Prefix: " .m-* "**
+**Prefix: " .m-* "*
 
 Modifiers are applied at any level of the component, they can be block, element or even global modifiers. These can also be seen as helper classes. In the stylesheet these are generally nested at the level they are needed to avoid having to use unique class names. Modifiers can be anything from subtle style changes like background colours or font sizes to layout floating or entire component theme colours.
 
 ## Global Modifiers 
-**Prefix: " .g-* "**
+**Prefix: " .g-* "*
 
 The only differences between regular modifiers and global modifiers is the prefix and the fact that global modifiers have to be generic enough to be used on any component without requiring special style overwrites.
 

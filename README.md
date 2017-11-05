@@ -9,7 +9,7 @@ Components are broken down into blocks to group code and visual elements togethe
 ## Element 
 **Prefix: " .e-* "*
 
-Elements are contained within component blocks, usually as the first child descendant but not restricted to and prefixed by "e-". These elements are what makes up a block component, i.e for a dropdown this would be the list items inside the drop down. For Domofond, the styling of elements are dependent on the immediate parent block element, in other words they are nested in CSS. This allows reusing the names elements without affecting the CSS globally or having to use unique and lengthy class names. Elements should never live on a root level without being wrapped by a block element.
+Elements are contained within component blocks, usually as the first child descendant but not restricted to and prefixed by "e-". These elements are what makes up a block component, i.e for a dropdown this would be the list items inside the drop down. The styling of elements are dependent on the immediate parent block element, in other words they are nested in CSS. This allows reusing the names elements without affecting the CSS globally or having to use unique and lengthy class names. Elements should never live on a root level without being wrapped by a block element.
 
 ## Modifiers 
 **Prefix: " .m-* "*
